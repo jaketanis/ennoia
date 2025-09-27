@@ -22,7 +22,7 @@ A place to reflect on the books you read.
 
 ## Adding a book
 
-1. Click **Add**. Ennoia updates it's screen with some forms.
+1. Click **Add**. Ennoia updates the screen with some forms.
 2. Enter a **Title**.
 3. Enter an **Author**.
 4. Write some **Notes** about what interested you the most.
