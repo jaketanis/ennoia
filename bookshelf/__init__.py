@@ -9,7 +9,7 @@ def create_app(test_config=None):
     bookshelf = Flask(__name__, instance_relative_config=True)
     bookshelf.config.from_mapping(
         #for 
-        SECRET_KEY=os.environment.get('SECRET_KEY','dev'),
+        SECRET_KEY=os.environ.get('SECRET_KEY','dev'),
         #stores the database in the instance folder
         DATABASE=os.path.join(bookshelf.instance_path, 'bookshelf.sqlite'),
     )
