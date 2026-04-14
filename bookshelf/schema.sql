@@ -12,6 +12,7 @@ CREATE TABLE book (
     author TEXT NOT NULL,
     title TEXT NOT NULL,
     notes TEXT,
-    added DATETIME DEFAULT CURRENT_TIMESTAMP
+    added DATETIME DEFAULT CURRENT_TIMESTAMP,
+    user_id INTEGER,
     FOREIGN KEY (user_id) REFERENCES user(id)
 );
