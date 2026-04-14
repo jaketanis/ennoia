@@ -4,7 +4,7 @@
 
 A place to reflect on the books you read.
 
-[Click here to get started.](https://ennoia.pythonanywhere.com/auth/login)
+[Click here to get started.](https://jaketanis.pythonanywhere.com/auth/login)
 
 
 ## Creating an account
