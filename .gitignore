@@ -1,2 +1,10 @@
 /.venv
 /.vscode
+# local/runtime data
+instance/
+bookshelf/instance/
+*.sqlite
+*.db
+*.bak_*
+__pycache__/
+*.py[cod]
