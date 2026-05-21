@@ -36,6 +36,6 @@ def init_db_command():
     click.echo('Initialized the database.')
 
 #to register the databse with the application
-def init_app(bookshelf):
-    bookshelf.teardown_appcontext(close_db)
-    bookshelf.cli.add_command(init_db_command)
+def init_app(ennoia):
+    ennoia.teardown_appcontext(close_db)
+    ennoia.cli.add_command(init_db_command)

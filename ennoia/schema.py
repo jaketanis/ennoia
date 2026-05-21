@@ -1,6 +1,6 @@
 import click
 from flask.cli import with_appcontext
-from bookshelf.db import get_db
+from ennoia.db import get_db
 
 #this is for managing the database, like changing table values, adding new columns, etc.
 
@@ -17,8 +17,8 @@ def add_user_id_column():
     except Exception as e:
         click.echo(f'Column might already exist: {e}')
 
-def init_app(bookshelf):
-    bookshelf.cli.add_command(add_user_id_column)
+def init_app(ennoia):
+    ennoia.cli.add_command(add_user_id_column)
 
 
 @click.command('add-1-to-user-id')
@@ -33,7 +33,6 @@ def add_1_to_user_id():
     except Exception as e:
         click.echo(f'Error updating user_id: {e}')
 
-
-def init_app(bookshelf):
-    bookshelf.cli.add_command(add_user_id_column)
-    bookshelf.cli.add_command(add_1_to_user_id)
+def init_app(ennoia):
+    ennoia.cli.add_command(add_user_id_column)
+    ennoia.cli.add_command(add_1_to_user_id)

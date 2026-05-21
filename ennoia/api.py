@@ -5,8 +5,8 @@ from flask import (
     Blueprint, g, request, jsonify
 )
 
-#bookshelf function imports
-from bookshelf.db import get_db
+#ennoia function imports
+from ennoia.db import get_db
 
 #api blueprint
 bp = Blueprint('api', __name__, url_prefix='/api/v1')
@@ -26,7 +26,7 @@ def api_auth_required(view):
       password = request.authorization.password
 
       #setting up the database
-      db= get_db()
+      db = get_db()
 
       #gathering the user information from the database based on the username from the request
       user = db.execute(

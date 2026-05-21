@@ -3,10 +3,10 @@ from flask import (
 )
 
 from slugify import slugify
-from bookshelf.db import get_db
-from bookshelf.auth import login_required
-from bookshelf.info import get_book_info, get_book_description
-from bookshelf.author_name import get_author_name
+from ennoia.db import get_db
+from ennoia.auth import login_required
+from ennoia.info import get_book_info, get_book_description
+from ennoia.author_name import get_author_name
 
 bp = Blueprint('books',__name__)
 

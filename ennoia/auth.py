@@ -3,7 +3,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from flask import (
     Blueprint, flash, g, redirect, render_template, request, session, url_for
 )
-from bookshelf.db import get_db
+from ennoia.db import get_db
 #to create a blueprint for authentication views
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
