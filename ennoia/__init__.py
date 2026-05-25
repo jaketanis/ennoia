@@ -14,7 +14,7 @@ def create_app(test_config=None):
     
     """
     ennoia.config.from_mapping(
-        #for development only, need to change for production
+        #sets the secret_key to dev if there is not a secret key in config.
         SECRET_KEY=os.environ.get('SECRET_KEY','dev'),
         #stores the database in the instance folder
         DATABASE=os.path.join(ennoia.instance_path, 'ennoia.sqlite'),

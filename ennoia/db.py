@@ -20,11 +20,11 @@ def close_db(e=None):
     if db is not None:
         db.close()
 
-#to run the function that sets up the database.
+#to run the function that sets up the database. i believe this also clears the current databases contents.
 def init_db():
     db = get_db()
 
-    #no idea what this does.
+    #to run the sql (found in schema.sql) that actually initializes the database
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
 

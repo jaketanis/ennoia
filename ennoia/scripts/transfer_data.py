@@ -6,7 +6,8 @@ Specify the table that you want to copy in 'source_db' and specify the table tha
 
 import sqlite3
 
-source_db = sqlite3.connect('/home/jaketanis/ennoia/instance/bookshelf.sqlite')
+# change these to the databases you want to transfer data to
+source_db = sqlite3.connect('/home/jaketanis/ennoia/ennoia/instance/bookshelf.sqlite')
 target_db = sqlite3.connect('/home/jaketanis/ennoia/instance/ennoia.sqlite')
 
 source_db.backup(target_db)

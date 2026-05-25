@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title%} bookshelf {% endblock %}
+{% block title%} ennoia {% endblock %}
 {%block menu%}
       {% if g.user %}
          <p><a href='{{ url_for('books.add') }}' class='add-button'>Add</a></p>
@@ -9,7 +9,7 @@
          </div>
 
          <p><a href='{{ url_for('auth.logout') }}' class='logout-button'>Log Out</a></p>
-            <!-- <li><a href='{{ url_for('index') }}'>bookshelf</a></li> -->
+            <!-- <li><a href='{{ url_for('index') }}'>ennoia</a></li> -->
       {% endif %}
 {% endblock %}
 
