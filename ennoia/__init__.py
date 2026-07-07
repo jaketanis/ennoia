@@ -20,15 +20,16 @@ def create_app(test_config=None):
         DATABASE=os.path.join(ennoia.instance_path, 'ennoia.sqlite'),
     )
 
-    if test_config is None:
+    #if test_config is None:
         # if testing, the tests from config.py are used
-        ennoia.config.from_pyfile('config.py', silent=True)
-    else:
+    #    ennoia.config.from_pyfile('config.py', silent=True)
+    #else:
         #configurations for testing if test_config is true
-        ennoia.config.update(test_config)
+    #    ennoia.config.update(test_config)
 
     #makes the instance folder if not present.
     #needed because Flask does not make one automatically.
+    
     try:
         os.makedirs(ennoia.instance_path)
     except OSError:
