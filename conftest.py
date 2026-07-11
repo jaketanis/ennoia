@@ -10,7 +10,7 @@ from ennoia import create_app
 from ennoia.db import get_db, init_db
 
 # to read the test data
-with open(os.path.join(os.path.dirname(__file__), 'data.sql'), 'rb') as f:
+with open(os.path.join(os.path.dirname(__file__), 'tests/data.sql'), 'rb') as f:
    data = f.read().decode('utf8')
 
 @pytest.fixture

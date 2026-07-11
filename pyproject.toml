@@ -1,0 +1,11 @@
+[project]
+name = "ennoia"
+version = "2.0"
+description = "A place to reflect on what you read."
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["ennoia"]
