@@ -77,6 +77,8 @@ data-aria-dark="Switch to auto color mode">
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>On this page</h3><ul>
 <li><a class="reference internal" href="#downloading-ennoia-from-github">Downloading Ennoia from GitHub</a></li>
 <li><a class="reference internal" href="#running-ennoia-an-your-computer">Running Ennoia an your computer</a></li>
+<li><a class="reference internal" href="#creating-your-profile">Creating your profile</a></li>
+<li><a class="reference internal" href="#adding-your-first-book">Adding your first book</a></li>
 </ul>
 </div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
   </aside>
@@ -120,10 +122,11 @@ data-aria-dark="Switch to auto color mode">
 <li><p>Creating your profile</p></li>
 <li><p>Adding your first book</p></li>
 </ul>
-<p>Right now, Ennoia is an un-hosted web app. This means that you access it through a broswer but it runs on your own computer. This is <em>temporary</em>. Eventually, you will not need to run it on your own computer. But for now, it must be downloaded and run in a terminal for you to use Ennoia.</p>
+<p>Ennoia is a local web app. This means that you access it through a broswer, but it runs on your own computer.</p>
 <p>There are various ways you can download Ennoia and use it, but this tutorial will cover the simplest way to get started.</p>
 <p>To complete this tutorial, you need:</p>
 <ul class="simple">
+<li><p>An internet connection</p></li>
 <li><p>A web browser</p></li>
 <li><p>Access to a terminal</p></li>
 </ul>
@@ -139,6 +142,44 @@ data-aria-dark="Switch to auto color mode">
 </section>
 <section id="running-ennoia-an-your-computer">
 <h2>Running Ennoia an your computer<a class="headerlink" href="#running-ennoia-an-your-computer" title="Link to this heading">#</a></h2>
+<p>Since Ennoia is a local web app, you need to run it on your own computer. This is done in the terminal.</p>
+<ol class="arabic simple">
+<li><p>Open your terminal. This is where we will run Ennoia.</p></li>
+<li><p>We need to now go to the folder where Ennoia is. In the terminal, change folders to where Ennoia is by using the <code class="docutils literal notranslate"><span class="pre">cd</span></code> command, and then press <strong>Enter</strong>.</p></li>
+<li><p>After navigating to Ennoia, we now need to create a virtual environment. Virtual environments allows us to install the necessary components to run the app. Type <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">.venv</span></code>, and then press <strong>Enter</strong>. This creates a folder named <strong>.venv</strong>.</p></li>
+<li><p>After creating the virtual environment folder, we now need to activate it. Type <code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">./.venv/bin/activate</span></code>, and then press <strong>Enter</strong>. If <strong>(.venv)</strong> appears in the command line, this means you have activated the virtual environment.</p></li>
+<li><p>We can now install the components needed for the app. These are listed in <strong>requirements.txt</strong>. To install these components, type <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirments.txt</span></code>, and then press <strong>Enter</strong>. You should see downloads occurring in the terminal.</p></li>
+<li><p>We can now run the app. Type <code class="docutils literal notranslate"><span class="pre">waitress-serve</span> <span class="pre">--host</span> <span class="pre">127.0.0.1</span> <span class="pre">--call</span> <span class="pre">ennoia:create_app</span></code>. The command line should show <strong>Serving on http:127.0.0.1:8080</strong>. The app is now running.</p></li>
+<li><p>In the command line, hover over the number with your mouse, and then type <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">C</span></code>. Ennoia opens in your browser.</p></li>
+</ol>
+<img alt="_images/login_window.png" src="_images/login_window.png" />
+</section>
+<section id="creating-your-profile">
+<h2>Creating your profile<a class="headerlink" href="#creating-your-profile" title="Link to this heading">#</a></h2>
+<p>Before we create a profile, we need to setup the database. After we do that, we can then create a profile, login, and then add some books.</p>
+<ol class="arabic simple">
+<li><p>In the command line, type <code class="docutils literal notranslate"><span class="pre">flask</span> <span class="pre">--app</span> <span class="pre">ennoia</span> <span class="pre">init-db</span></code>. The command line should display <strong>Initialized the database</strong>.</p></li>
+<li><p>In Ennoia, click <strong>Create</strong>. The Create profile window opens.</p></li>
+</ol>
+<img alt="_images/create_profile_window.png" src="_images/create_profile_window.png" />
+<ol class="arabic simple" start="3">
+<li><p>Type a <strong>Username</strong> and a <strong>Password</strong>.</p></li>
+<li><p>Click <strong>Create</strong>. The Login window opens.</p></li>
+<li><p>Enter your credentials, and then click <strong>Login</strong>. Ennoia opens.</p></li>
+</ol>
+<img alt="_images/ennoia_window.png" src="_images/ennoia_window.png" />
+</section>
+<section id="adding-your-first-book">
+<h2>Adding your first book<a class="headerlink" href="#adding-your-first-book" title="Link to this heading">#</a></h2>
+<p>Setup is complete. We can now use Ennoia and add books to our new profile.</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Add</strong>. Ennoia opens a window for you to add a book.</p></li>
+<li><p>Type the <strong>Title</strong> of a book you are reading.</p></li>
+<li><p>Type the <strong>Author</strong> of the same book.</p></li>
+<li><p>In <strong>Notes</strong>, type your current thoughts on the book so far. What is most compelling? What has surprised you? What are you having a hard time with?</p></li>
+<li><p>After writing out your thoughts, click <strong>Add</strong>. Ennoia displays the book and your thoughts along with it.</p></li>
+</ol>
+<img alt="_images/added_book.png" src="_images/added_book.png" />
 </section>
 </section>
 
