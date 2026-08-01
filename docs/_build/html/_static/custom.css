@@ -1,4 +1,3 @@
-/* This file intentionally left blank. */
-image {
-    border-color: black;
+img {
+    --sy-c-border: black;
 }

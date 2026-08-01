@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-accent-color="violet" data-content_root="./">
+<html lang="en" data-accent-color="blue" data-content_root="./">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Downloading and using Ennoia for the first time - Ennoia documentation</title><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="How-to guides" href="how_to_guides.html" /><link rel="prev" title="Tutorials" href="tutorials.html" /><script>
@@ -149,10 +149,12 @@ data-aria-dark="Switch to auto color mode">
 <li><p>After navigating to Ennoia, we now need to create a virtual environment. Virtual environments allows us to install the necessary components to run the app. Type <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">.venv</span></code>, and then press <strong>Enter</strong>. This creates a folder named <strong>.venv</strong>.</p></li>
 <li><p>After creating the virtual environment folder, we now need to activate it. Type <code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">./.venv/bin/activate</span></code>, and then press <strong>Enter</strong>. If <strong>(.venv)</strong> appears in the command line, this means you have activated the virtual environment.</p></li>
 <li><p>We can now install the components needed for the app. These are listed in <strong>requirements.txt</strong>. To install these components, type <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirments.txt</span></code>, and then press <strong>Enter</strong>. You should see downloads occurring in the terminal.</p></li>
-<li><p>We can now run the app. Type <code class="docutils literal notranslate"><span class="pre">waitress-serve</span> <span class="pre">--host</span> <span class="pre">127.0.0.1</span> <span class="pre">--call</span> <span class="pre">ennoia:create_app</span></code>. The command line should show <strong>Serving on http:127.0.0.1:8080</strong>. The app is now running.</p></li>
-<li><p>In the command line, hover over the number with your mouse, and then type <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">C</span></code>. Ennoia opens in your browser.</p></li>
+<li><p>We can now run the app. Type <code class="docutils literal notranslate"><span class="pre">waitress-serve</span> <span class="pre">--host</span> <span class="pre">127.0.0.1</span> <span class="pre">--call</span> <span class="pre">ennoia:create_app</span></code>. The command line should show <strong>Serving on http:127.0.0.1:8080</strong>, which means the app is running.</p></li>
+<li><p>In the command line, hover over the URL with your mouse, and then type <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">C</span></code>. Ennoia opens in your browser.</p></li>
 </ol>
+<div class="image-2 docutils container">
 <img alt="_images/login_window.png" src="_images/login_window.png" />
+</div>
 </section>
 <section id="creating-your-profile">
 <h2>Creating your profile<a class="headerlink" href="#creating-your-profile" title="Link to this heading">#</a></h2>
@@ -161,13 +163,17 @@ data-aria-dark="Switch to auto color mode">
 <li><p>In the command line, type <code class="docutils literal notranslate"><span class="pre">flask</span> <span class="pre">--app</span> <span class="pre">ennoia</span> <span class="pre">init-db</span></code>. The command line should display <strong>Initialized the database</strong>.</p></li>
 <li><p>In Ennoia, click <strong>Create</strong>. The Create profile window opens.</p></li>
 </ol>
+<div class="image-2 docutils container">
 <img alt="_images/create_profile_window.png" src="_images/create_profile_window.png" />
+</div>
 <ol class="arabic simple" start="3">
 <li><p>Type a <strong>Username</strong> and a <strong>Password</strong>.</p></li>
 <li><p>Click <strong>Create</strong>. The Login window opens.</p></li>
 <li><p>Enter your credentials, and then click <strong>Login</strong>. Ennoia opens.</p></li>
 </ol>
+<div class="image-2 docutils container">
 <img alt="_images/ennoia_window.png" src="_images/ennoia_window.png" />
+</div>
 </section>
 <section id="adding-your-first-book">
 <h2>Adding your first book<a class="headerlink" href="#adding-your-first-book" title="Link to this heading">#</a></h2>
@@ -179,7 +185,9 @@ data-aria-dark="Switch to auto color mode">
 <li><p>In <strong>Notes</strong>, type your current thoughts on the book so far. What is most compelling? What has surprised you? What are you having a hard time with?</p></li>
 <li><p>After writing out your thoughts, click <strong>Add</strong>. Ennoia displays the book and your thoughts along with it.</p></li>
 </ol>
+<div class="image-2 docutils container">
 <img alt="_images/added_book.png" src="_images/added_book.png" />
+</div>
 </section>
 </section>
 

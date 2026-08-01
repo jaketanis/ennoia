@@ -48,11 +48,13 @@ Since Ennoia is a local web app, you need to run it on your own computer. This i
 
 5. We can now install the components needed for the app. These are listed in **requirements.txt**. To install these components, type ``pip install -r requirments.txt``, and then press **Enter**. You should see downloads occurring in the terminal.
 
-6. We can now run the app. Type ``waitress-serve --host 127.0.0.1 --call ennoia:create_app``. The command line should show **Serving on http:127.0.0.1:8080**. The app is now running.
+6. We can now run the app. Type ``waitress-serve --host 127.0.0.1 --call ennoia:create_app``. The command line should show **Serving on http:127.0.0.1:8080**, which means the app is running.
 
-7. In the command line, hover over the number with your mouse, and then type ``Ctrl + C``. Ennoia opens in your browser.
+7. In the command line, hover over the URL with your mouse, and then type ``Ctrl + C``. Ennoia opens in your browser.
 
-.. image:: images/login_window.png
+.. container:: image-2
+
+    .. image:: images/login_window.png
 
 Creating your profile
 ---------------------
@@ -62,7 +64,9 @@ Before we create a profile, we need to setup the database. After we do that, we 
 
 2. In Ennoia, click **Create**. The Create profile window opens.
 
-.. image:: images/create_profile_window.png
+.. container:: image-2
+
+    .. image:: images/create_profile_window.png
 
 3. Type a **Username** and a **Password**.
 
@@ -70,7 +74,9 @@ Before we create a profile, we need to setup the database. After we do that, we 
 
 5. Enter your credentials, and then click **Login**. Ennoia opens.
 
-.. image:: images/ennoia_window.png
+.. container:: image-2
+
+    .. image:: images/ennoia_window.png
 
 Adding your first book
 ----------------------
@@ -86,4 +92,6 @@ Setup is complete. We can now use Ennoia and add books to our new profile.
 
 5. After writing out your thoughts, click **Add**. Ennoia displays the book and your thoughts along with it.
 
-.. image:: images/added_book.png
+.. container:: image-2
+
+    .. image:: images/added_book.png
