@@ -19,10 +19,10 @@ While other book apps focus on metrics, Ennoia focuses on intention. The value y
 This documentation gives you every piece of information you need to use Ennoia.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
    
-   tutorials
-   how_to_guides
-   reference
-   explanation
+   tutorial/tutorials
+   how_to/how_to_guides
+   reference/reference
+   explanation/explanation
 

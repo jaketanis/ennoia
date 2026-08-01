@@ -26,8 +26,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'shibuya'
 html_theme_options = {
-    "color_mode": "Light",
-    "accent_color": "blue",
+    "color_mode": "light",
+    "accent_color": "black",
+    "dark_code": True,
 }
 html_static_path = ['_static']
 
+html_css_files = [
+    'custom.css'
+]

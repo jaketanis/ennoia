@@ -1,6 +1,8 @@
 Tutorials
 =========
 
+To introduce and teach you about Ennoia.
+
 .. toctree::
    :maxdepth: 1
 

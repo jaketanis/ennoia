@@ -54,7 +54,7 @@ Since Ennoia is a local web app, you need to run it on your own computer. This i
 
 .. container:: image-2
 
-    .. image:: images/login_window.png
+    .. image:: ../images/login_window.png
 
 Creating your profile
 ---------------------
@@ -66,7 +66,7 @@ Before we create a profile, we need to setup the database. After we do that, we 
 
 .. container:: image-2
 
-    .. image:: images/create_profile_window.png
+    .. image:: ../images/create_profile_window.png
 
 3. Type a **Username** and a **Password**.
 
@@ -76,7 +76,7 @@ Before we create a profile, we need to setup the database. After we do that, we 
 
 .. container:: image-2
 
-    .. image:: images/ennoia_window.png
+    .. image:: ../images/ennoia_window.png
 
 Adding your first book
 ----------------------
@@ -94,4 +94,4 @@ Setup is complete. We can now use Ennoia and add books to our new profile.
 
 .. container:: image-2
 
-    .. image:: images/added_book.png
+    .. image:: ../images/added_book.png
