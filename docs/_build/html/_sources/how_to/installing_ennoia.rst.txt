@@ -1,5 +1,5 @@
 Installing Ennoia through HTTPS
-============================
+===============================
 
 1. In a web browser, go to https://github.com/jaketanis/ennoia.
 

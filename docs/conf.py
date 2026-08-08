@@ -13,11 +13,10 @@ author = 'Jacob Kenneth Tanis'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc']
+extensions = ['sphinxcontrib.openapi']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -33,5 +32,5 @@ html_theme_options = {
 html_static_path = ['_static']
 
 html_css_files = [
-    'custom.css'
+    'custom.css',
 ]

@@ -1,0 +1,176 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Ennoia API
+  contact:
+    name: Jake Tanis
+    email: jaketanis@proton.me
+    url: https://github.com/jaketanis
+  license:
+    name: MIT
+    url: https://github.com/jaketanis/ennoia_api_docs?tab=MIT-1-ov-file
+  x-logo:
+    url: ./Ennoia.svg
+    altText: Ennoia logo
+externalDocs:
+  description: "GitHub"
+  url: 'https://github.com/jaketanis/ennoia_api_docs'
+x-tagGroups: #organizes the defined tags (from the previous section) into a larger category. In the UI, this is the heading above the two endpoint tags.
+servers:
+  - url: https://jaketanis.pythonanywhere.com/api/v1
+    description: Production server
+  - url: https://username:password@jaketanis.pythonanywhere.com/api/v1
+paths:
+  /books/{id}:
+    get:
+      summary: "Get information about one book."
+      description: "Gets the title, author, notes, and the added date of a book based on the book id."
+      operationId: GetBookInfo
+      parameters:
+        - $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          $ref: '#/components/responses/OneBookSuccess'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+      security:
+        - basic_auth: []
+
+  /books:
+    get:
+      summary: "Get information about all books in your library."
+      description: "Gets the title, author, notes, and added date for all books."
+      operationId: GetAllBooks
+      responses:
+        '200':
+          $ref: '#/components/responses/AllBooksSuccess'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+      security:
+      - basic_auth: []
+      
+components:
+  parameters:
+    id:
+      name: id
+      # where the parameter is located (path/query/header/cookie)
+      in: path
+      # either true or false. Path parameters are always true.
+      required: true
+      # data type and constraints 
+      description: "The books id."
+      schema:
+        type: integer
+  securitySchemes:
+    basic_auth:
+      type: http
+      scheme: basic
+      description: "Basic HTTP authorization. Use your username and password."
+  responses:
+    OneBookSuccess:
+      description: "Retrieved book successfully"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              added:
+                type: string
+                description: "When the user added the book to their library."                  
+              author:
+                type: string
+                description: "The author of the book."                  
+              id:
+                type: integer
+                description: "The book id."
+              notes:
+                type: string
+                description: "Notes that the user entered for the book."
+              title:
+                type: string
+                description: "The title of the book."
+          examples:
+            success:
+              summary: "Retrieved book"
+              value: 
+                added: "2025-02-25 11:59:59"
+                author: "John Doe"
+                id: 123
+                notes: "Here are some notes about the book."
+                title: "Title of book"
+    AllBooksSuccess:
+      description: "Retrieved all books successfully"
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                added:
+                  type: string
+                  description: "When the user added the book to their library."                  
+                author:
+                  type: string
+                  description: "The author of the book."                  
+                id:
+                  type: integer
+                  description: "The book id."
+                notes:
+                  type: string
+                  description: "Notes that the user entered for the book."
+                title:
+                  type: string
+                  description: "The title of the book."
+          examples:
+            success:
+              summary: "Retrieved all books"
+              value: [
+                {
+                  added: "2025-02-25 11:59:59",
+                  author: "John Doe",
+                  id: 123,
+                  notes: "Here are some notes about the book.",
+                  title: "Title of book"
+                },
+                {
+                  added: "2024-07-30 3:22:11",
+                  author: "John Doe",
+                  id: 124,
+                  notes: "Here are some notes about the book.",
+                  title: "Another title of book"
+                }
+              ]
+    Unauthorized:
+      description: "Authentication failed"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: "An error message that tells users what happened and how to prevent the error."
+          examples:
+            no_auth:
+              summary: "No credentials provided"
+              value:
+                error: "Please provide a username and a password."
+            invalid_auth:
+              summary: "Invalid credentials"
+              value:
+                error: "We couldn't find that account. Please try again with a different username and/or password."
+    # unsuccessful 
+    NotFound:
+      description: "Book not found"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                description: "An error message that tells users what happened and how to prevent the error."
+                example: "Sorry, we couldn't find a book with that id. Please try with a different id."

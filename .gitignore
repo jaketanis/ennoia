@@ -1,5 +1,7 @@
 /.venv
 /.vscode
+/.github
+/.pytest_cache
 # local/runtime data
 instance/
 bookshelf/instance/
