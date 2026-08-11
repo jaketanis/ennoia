@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-accent-color="black" data-content_root="../">
+<html lang="en" data-accent-color="gold" data-content_root="../">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Adding a book - Ennoia documentation</title><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Editing a book" href="editing_a_book.html" /><link rel="prev" title="Logging in" href="logging_in.html" /><script>
@@ -7,17 +7,11 @@
     setColorMode(localStorage._theme||"light");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=e1a1ceaf" />
     <link rel="stylesheet" type="text/css" href="../_static/shibuya.css?v=2ceb65ce" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link media="print" rel="stylesheet" type="text/css" href="../_static/print.css?v=20ff2c19" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root {
-  --sy-f-text: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
-  --sy-f-heading: "Inter", var(--sy-f-sys), var(--sy-f-cjk), sans-serif;
-}
-</style>
+    
     
   <meta property="og:type" content="website"/><meta property="og:title" content="Adding a book"/>
     <meta name="twitter:card" content="summary"/>
@@ -35,7 +29,10 @@
       <div class="sy-head-extra flex items-center print:hidden"><form class="searchbox flex items-center" action="../search.html" method="get">
   <input type="text" name="q" placeholder="Search" />
   <kbd>/</kbd>
-</form><div class="sy-head-socials"></div></div>
+</form><div class="sy-head-socials">
+  <a href="https://github.com/jaketanis/ennoia" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a></div></div>
     </div>
     <div class="sy-head-actions flex items-center shrink-0 print:hidden"><button class="js-theme theme-switch flex items-center"
 data-aria-auto="Switch to light color mode"
@@ -74,7 +71,11 @@ data-aria-dark="Switch to auto color mode">
 <li class="toctree-l2"><a class="reference internal" href="../reference/api_reference.html">API reference</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../explanation/explanation.html">Explanation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../explanation/explanation.html">Explanation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../explanation/why_local_app.html">Why is Ennoia run locally instead of on a server?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../explanation/why_simple_styles.html">Why is the syling so simple?</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -118,7 +119,7 @@ data-aria-dark="Switch to auto color mode">
   </div>
 </div><div class="flex flex-col break-words justify-between">
       <div class="relative min-w-0 max-w-6xl px-6 pb-6 pt-8 xl:px-12">
-  <article class="yue dark-code" role="main">
+  <article class="yue" role="main">
           <section id="adding-a-book">
 <h1>Adding a book<a class="headerlink" href="#adding-a-book" title="Link to this heading">#</a></h1>
 <ol class="arabic simple">
@@ -159,7 +160,7 @@ data-aria-dark="Switch to auto color mode">
 <footer class="sy-foot">
   <div class="sy-foot-inner sy-container mx-auto">
     <div class="sy-foot-reserved md:flex justify-between items-center">
-      <div class="sy-foot-copyright"><p>2026, Jacob Kenneth Tanis</p>
+      <div class="sy-foot-copyright"><p>Copyright &#169; Jake Tanis</p>
   
   <p>
     Made with
@@ -169,12 +170,18 @@ data-aria-dark="Switch to auto color mode">
     <a href="https://shibuya.lepture.com">Shibuya theme</a>.
   </p>
 </div>
-      <div class="sy-foot-socials"></div>
+      <div class="sy-foot-socials">
+  <a href="https://github.com/jaketanis/ennoia" aria-label="GitHub">
+    <iconify-icon icon="simple-icons:github"></iconify-icon>
+  </a></div>
     </div>
   </div>
 </footer>
       <script src="../_static/documentation_options.js?v=5929fcd5"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+      <script src="../_static/design-tabs.js?v=f930bc37"></script>
       <script src="../_static/shibuya.js?v=50760d75"></script></body>
 </html>

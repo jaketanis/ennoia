@@ -34,7 +34,7 @@ The only way to access Ennoia (for now) is through GitHub. If you do not have a 
 
 4. Extract the pasted ZIP file. You should see a folder named **ennoia-main**.
 
-Running Ennoia an your computer
+Running Ennoia on your computer
 -------------------------------
 Since Ennoia is a local web app, you need to run it on your own computer. This is done in the terminal.
 

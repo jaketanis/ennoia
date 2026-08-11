@@ -3,3 +3,5 @@
 </div>
 
 A place to reflect on the books you read.
+
+To get started, see the [docs]().
