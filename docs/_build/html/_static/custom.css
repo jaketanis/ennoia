@@ -1,0 +1,7 @@
+.yue a.headerlink {
+    display: none;
+}
+
+dt.sig:hover {
+    background: inherit;
+}

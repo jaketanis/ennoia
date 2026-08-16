@@ -31,7 +31,6 @@ html_theme = 'shibuya'
 html_theme_options = {
     'color_mode': 'light',
     'accent_color': 'gold',
-    'github_url': 'https://github.com/jaketanis/ennoia',
     'nav_socials': [
         {
             'name': 'GitHub',
