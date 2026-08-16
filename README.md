@@ -4,4 +4,4 @@
 
 A place to reflect on the books you read.
 
-To get started, see the [docs]().
+To get started, see the [docs](https://ennoia.readthedocs.io/en/latest/).
