@@ -12,7 +12,7 @@ What is Ennoia?
 
 Ennoia is a greek word that translates to the act of thinking, thought, or consideration. The purpose of this software is to provide an environment that allows you to do such things, specificly through writing down your reflections on the books that you are reading.
 
-It is a simple, non-distracting, and elegant canvas for you to gather your thoughts on the books you value, or dislike. 
+It is a simple, non-distracting canvas for you to gather your thoughts on the books you value, or dislike. 
 
 While other book apps focus on metrics, Ennoia focuses on intention. The value you get out of this app is the value you put into it. It purely is a medium that reflects your own intention towards the books you read and the consideration you give to them.
 
