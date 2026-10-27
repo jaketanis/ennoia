@@ -46,7 +46,7 @@ Since Ennoia is a local web app, you need to run it on your own computer. This i
 
 4. After creating the virtual environment folder, we now need to activate it. Type ``. ./.venv/bin/activate``, and then press **Enter**. If **(.venv)** appears in the command line, this means you have activated the virtual environment.
 
-5. We can now install the components needed for the app. These are listed in **requirements.txt**. To install these components, type ``pip install -r requirments.txt``, and then press **Enter**. You should see downloads occurring in the terminal.
+5. We can now install the components needed for the app. These are listed in **requirements.txt**. To install these components, type ``pip install -r requirements.txt``, and then press **Enter**. You should see downloads occurring in the terminal.
 
 6. We can now run the app. Type ``waitress-serve --host 127.0.0.1 --call ennoia:create_app``. The command line should show **Serving on http:127.0.0.1:8080**, which means the app is running.
 
